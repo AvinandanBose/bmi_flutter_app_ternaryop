@@ -12,7 +12,7 @@ const appBackgroundColor = Color(0xFF0B102A);
 enum Gender{
   male,
   female,
-  noGender,
+  noGender, //not needed if Gender? selectedGender; is used in the class.
 }
 class InputPage extends StatefulWidget {
   const InputPage({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-   Gender selectedGender = Gender.noGender;
+   Gender selectedGender = Gender.noGender; // or simply Gender? selectedGender;
 
 
  // Color maleCardColor = inactiveCardColor;
